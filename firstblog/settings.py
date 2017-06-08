@@ -124,3 +124,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Page behavior
 
 LOGIN_REDIRECT_URL = '/'
+SECURE_SSL_REDIRECT = os.environ.get('HTTP_SECURITY') != "False"
